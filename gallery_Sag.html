@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+  <head>
+<link rel="stylesheet" href="text.css" type="text/css">
+<link rel="stylesheet" href="lable.css">
+<link rel="stylesheet" href="pop up.css">
+
+    <style>
+a{text-decoration:none; color: black;}
+      aside{width: 89%;
+            margin-left: 45px;
+            background-color: white;
+           background-image: url('종이.png');
+           padding: 50px;
+           padding-top: 250px;
+           border-radius: 30px;}
+
+      #columns{
+        column-width:270px;
+        column-gap: 30px;
+      }
+      #columns figure{
+        display: inline-block;
+        background-color: white;
+        border:4px solid rgba(0,0,0,0.2);
+        margin:0;
+        margin-bottom: 30px;
+        padding:15px;
+        border-radius: 15px;
+      }
+      #columns figure img{
+        width:100%;
+      }
+      #columns figure figcaption{
+        border-top:1px solid rgba(0,0,0,0.2);
+        padding:10px;
+        margin-top:11px;
+      }
+
+    body{background-color: black;
+        background-image: url('배경.png');}
+
+#G_name{margin-left: 42%;
+        margin-top: 3%;
+        margin-bottom: -4%;}
+
+.nav{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    margin-top: -5.5%;
+   border-bottom: 1px solid #968D96;}
+
+.navT{display: flex;}
+
+#nav_txt1, #nav_txt2, #nav_txt3{
+          flex-grow: 1;
+          width: 120px;
+          height: 70px;
+          margin-top: -200px;
+          margin-right: 50px;
+          margin-left: 42%;
+}
+
+#nav_txt1{margin-left: 300px;}
+#nav_txt3{margin-right: 300px;}
+
+
+.nav2{
+    width: 70%;
+    margin-left: 18%;
+    margin-bottom: 5%;
+    margin-top: -5.5%;}
+
+.navT2{display: flex;}
+
+#nav2_txt1, #nav2_txt2, #nav2_txt3, #nav2_txt4, #nav2_txt5, #nav2_txt6{
+          flex-grow: 1;
+          width: 120px;
+          height: 70px;
+          margin-top: -200px;
+          margin-right: 50px;
+          margin-left: 40%;
+}
+
+#nav_txt1{margin-left: 300px;}
+#nav_txt6{margin-right: 300px;}
+
+
+m #menuicon:hover aside{opacity:0;}
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="m">
+  		<input type="checkbox" id="menuicon">
+  		<ul>
+  			<li>
+  				<label for="menuicon">
+  					<span></span><span></span><span></span>
+  				</label>
+  			</li>
+  		</ul>
+
+  		<div class="sidebar">
+  			<ul class="List">
+  			    <li class="gallery"><a href="index.html">홈</a></li>
+  			    <li class="music"><a href="music.html">음악</a></li>
+            <li class="art"><a href="art.html">예술</a></li>
+      </div>
+
+
+
+<header>
+<img id="G_name" src="이미지/갤러리.png">
+</header>
+
+
+    <aside>
+
+      <div class="nav">
+      <div class="navT">
+    <a href="gallery.html"><img id='nav_txt1' src="이미지/전체.png"
+                                onmouseover="All_mouseover(this)" onmouseout="All_mouseout(this)"></a>
+    <a href="M_gallery.html"><img id='nav_txt2'src="이미지/음악.png"
+                            onmouseover="M_mouseover(this)" onmouseout="M_mouseout(this)"></a>
+    <a href="A_gallery.html"><img id='nav_txt3' src="이미지/예술B.png"></a>
+      </div>
+      </div>
+
+
+      <div class="nav2">
+      <div class="navT2">
+    <a href="gallery_Dos.html"><img id='nav2_txt1' src="이미지/두스부르후.png"
+                                onmouseover="Do_mouseover(this)" onmouseout="Do_mouseout(this)"></a>
+    <a href="gallery_Mo.html"><img id='nav2_txt2'src="이미지/모딜리아니.png"
+                            onmouseover="Mo_mouseover(this)" onmouseout="Mo_mouseout(this)"></a>
+    <a href="gallery_Ca.html"><img id='nav2_txt3' src="이미지/까미유.png"
+                            onmouseover="Ca_mouseover(this)" onmouseout="Ca_mouseout(this)"></a>
+    <a href="gallery_Bo.html"><img id='nav2_txt4' src="이미지/부그로.png"
+                                onmouseover="Bo_mouseover(this)" onmouseout="Bo_mouseout(this)"></a>
+    <a href="gallery_Na.html"><img id='nav2_txt5'src="이미지/나혜석.png"
+                            onmouseover="Na_mouseover(this)" onmouseout="Na_mouseout(this)"></a>
+    <a href="gallery_Sag.html"><img id='nav2_txt6' src="이미지/사임당.png"
+                              onmouseover="Sa_mouseover(this)" onmouseout="Sa_mouseout(this)"></a>
+      </div>
+      </div>
+
+
+      <div id="columns">
+
+        <figure>
+          <img src="사임당.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당2.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당2.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당2.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당2.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당2.jpg"onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="사임당1.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        </figure>
+
+
+
+        <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+        <img src="사임당.jpg" style="width:100%" >
+        <div class="numbertext"><h1>사임당 초상화</h1> <br><h3> -작가미상 </h3> </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="사임당2.jpg" style="width:100%">
+          <div class="numbertext"><h1>가지와 방아개비 </h1></div>
+        </div>
+
+        <div class="mySlides">
+          <img src="사임당3.jpg" style="width:100%">
+          <div class="numbertext"><h1>화조도 중</h1> </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="사임당4.jpg" style="width:100%">
+          <div class="numbertext"><h1>물봉선화와 쇠똥벌래</h1> <br><h3> -초중도 중 </h3> </div>
+        </div>
+
+
+      <div class="mySlides">
+          <img src="사임당5.jpg" style="width:100%">
+          <div class="numbertext"><h1>수선화와 잠자리</h1> </div>
+          </div>
+
+          <div class="mySlides">
+          <img src="사임당6.jpg" style="width:100%">
+          <div class="numbertext"><h1>메화 대나무 새</h1><br><h3> -화조도 12폭 중 </h3> </div>
+          </div>
+
+            <div class="mySlides">
+            <img src="사임당7.jpg" style="width:100%">
+            <div class="numbertext"><h1>조충도 수박과 들쥐</h1>  </div>
+            </div>
+
+
+            <div class="mySlides">
+            <img src="사임당8.jpg" style="width:100%">
+            <div class="numbertext"><h1>포도</h1> </div>
+            </div>
+
+            <div class="mySlides">
+            <img src="사임당9.jpg" style="width:100%">
+            <div class="numbertext"><h1>산차조기와 사마귀</h1></h1></div>
+            </div>
+
+            <div class="mySlides">
+            <img src="사임당10.jpg" style="width:100%">
+            <div class="numbertext"><h1>큰나비와 메뚜기</h1> <br><h3> -화조도 12폭 중 </h3> </div>
+          </div>
+
+          <div class="mySlides">
+          <img src="사임당11.jpg" style="width:100%">
+          <div class="numbertext"><h1>원추리와 개구리</h1> <br><h3> -조충도 중 </h3> </div>
+         </div>
+
+         <div class="mySlides">
+         <img src="사임당1.jpg" style="width:100%">
+         <div class="numbertext"><h1>양귀비와 딱정벌래</h1></div>
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+  </div>
+    </aside>
+
+
+
+
+    <script type="text/javascript">
+
+    function All_mouseover(obj){ obj.src="전체B.png";}
+    function All_mouseout(obj){ obj.src="전체.png";}
+
+    function M_mouseover(obj){ obj.src="음악B.png";}
+    function M_mouseout(obj){ obj.src="음악.png";}
+
+    function Do_mouseover(obj){ obj.src="두스부르후B.png";}
+    function Do_mouseout(obj){ obj.src="두스부르후.png";}
+
+    function Mo_mouseover(obj){ obj.src="모딜리아니B.png";}
+    function Mo_mouseout(obj){ obj.src="모딜리아니.png";}
+
+    function Ca_mouseover(obj){ obj.src="까미유B.png";}
+    function Ca_mouseout(obj){ obj.src="까미유.png";}
+
+    function Bo_mouseover(obj){ obj.src="부그로B.png";}
+    function Bo_mouseout(obj){ obj.src="부그로.png";}
+
+    function Na_mouseover(obj){ obj.src="나혜석B.png";}
+    function Na_mouseout(obj){ obj.src="나혜석.png";}
+
+    function Sa_mouseover(obj){ obj.src="사임당B.png";}
+    function Sa_mouseout(obj){ obj.src="사임당.png";}
+
+
+
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+    </script>
+
+
+  </body>

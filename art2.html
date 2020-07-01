@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="lable2.css">
+
+
+
+<style media="screen">
+
+body{margin: 0;
+    padding: 0;
+    background-image: url('이미지/배경4.png');}
+
+#G_name{margin-left: 43%;
+        margin-top: 2%;
+        margin-bottom: -3.5%;}
+
+
+        .main{
+             display: flex;
+             height: 680px;
+             margin-top: 4%;
+             background-color: rgba(0,0,0,0.6);
+            }
+
+    .Ming{
+          margin-left: 15%;
+          display: flex;}
+
+      #M1,#M2,#M3{flex-grow: 1;
+                  margin-left: 30px;
+                  margin-right: 30px;
+                  width: 400px;
+                  height: 500px;
+                  margin-top:25%;}
+
+#icon1, #icon2{position: absolute;
+              margin-top: 4.5%;
+              width: 60px;
+              opacity: 0.7;}
+#icon1{margin-left: 37%;}
+
+#G_Sarmag{position: absolute;
+          width: 20%;
+          margin-top: 230px;
+          margin-left: 41.5%;
+  }
+
+</style>
+
+<script type="text/javascript">
+
+function P_mouseover(obj){ obj.src="이미지2/인상파_부게로.png";}
+function P_mouseout(obj){ obj.src="이미지2/인상파.png";}
+
+function M_mouseover(obj){ obj.src="이미지2/남성_나혜석.png";}
+function M_mouseout(obj){ obj.src="이미지2/남성.png";}
+
+function Sa_mouseover(obj){ obj.src="이미지/조선시대_사임당.png";}
+function Sa_mouseout(obj){ obj.src="이미지2/조선시대.png";}
+
+</script>
+
+  </head>
+  <body>
+
+    <header>
+      <img id="G_Sarmag" src="이미지/소개.png">
+    <a href="art.html"><img id="icon1" src="이미지/오화살표icon.png"></a>
+    <img id="G_name" src="이미지/시대.png">
+    </header>
+
+    <div class="m">
+      <input type="checkbox" id="menuicon">
+      <ul>
+        <li>
+          <label for="menuicon">
+            <span></span><span></span><span></span>
+          </label>
+        </li>
+      </ul>
+
+      <div class="sidebar">
+        <ul class="List">
+            <li class="gallery"><a href="index.html">홈</a></li>
+            <li class="music"><a href="gallery.html">갤러리</a></li>
+            <li class="art"><a href="music2.html">음악</a></li>
+      </div>
+
+<div class="main">
+  <div class="Ming">
+    <a href="A_B1.html"><img id='M1' src="이미지2/인상파.png"
+                            onmouseover="P_mouseover(this)" onmouseout="P_mouseout(this)"></a>
+    <a href="A_N1.html"><img id='M2' src="이미지2/남성.png"
+                            onmouseover="M_mouseover(this)" onmouseout="M_mouseout(this)"></a>
+      <a href="A_S1.html"><img id='M3' src="이미지2/조선시대.png"
+                      onmouseover="Sa_mouseover(this)" onmouseout="Sa_mouseout(this)"></a>
+</div>
+</div>
+
+
+
+  </body>
+</html>

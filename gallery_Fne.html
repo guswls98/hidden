@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+  <head>
+<link rel="stylesheet" href="text.css" type="text/css">
+<link rel="stylesheet" href="lable.css">
+<link rel="stylesheet" href="pop up.css">
+
+    <style>
+a{text-decoration:none; color: black;}
+      aside{width: 89%;
+            margin-left: 45px;
+            background-color: white;
+           background-image: url('이미지/종이.png');
+           padding: 50px;
+           padding-top: 250px;
+           border-radius: 30px;}
+
+      #columns{
+        column-width:270px;
+        column-gap: 30px;
+      }
+      #columns figure{
+        display: inline-block;
+        background-color: white;
+        border:4px solid rgba(0,0,0,0.2);
+        margin:0;
+        margin-bottom: 30px;
+        padding:15px;
+        border-radius: 15px;
+      }
+      #columns figure img{
+        width:100%;
+      }
+      #columns figure figcaption{
+        border-top:1px solid rgba(0,0,0,0.2);
+        padding:10px;
+        margin-top:11px;
+      }
+
+    body{background-color: black;
+        background-image: url('이미지/배경.png');}
+
+        #G_name{margin-left: 42%;
+                margin-top: 3%;
+                margin-bottom: -4%;}
+
+        .nav{
+            width: 70%;
+            margin-left: 15%;
+            margin-bottom: 10%;
+            margin-top: -5.5%;
+           border-bottom: 1px solid #968D96;}
+
+        .navT{display: flex;}
+
+        #nav_txt1, #nav_txt2, #nav_txt3{
+                  flex-grow: 1;
+                  width: 120px;
+                  height: 70px;
+                  margin-top: -200px;
+                  margin-right: 50px;
+                  margin-left: 42%;
+        }
+
+        #nav_txt1{margin-left: 300px;}
+        #nav_txt3{margin-right: 300px;}
+
+
+        .nav2{
+            width: 70%;
+            margin-left: 18%;
+            margin-bottom: 5%;
+            margin-top: -5.5%;}
+
+.nav2{
+    width: 70%;
+    margin-left: 16%;
+    margin-bottom: 5%;
+    margin-top: -5.5%;}
+
+.navT2{display: flex;}
+
+#nav2_txt1, #nav2_txt2, #nav2_txt3, #nav2_txt4, #nav2_txt5, #nav2_txt6{
+          flex-grow: 1;
+          width: 120px;
+          height: 70px;
+          margin-top: -200px;
+          margin-right: 50px;
+          margin-left: 40%;
+}
+
+#nav_txt1{margin-left: 300px;}
+#nav_txt6{margin-right: 300px;}
+
+
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="m">
+      <input type="checkbox" id="menuicon">
+      <ul>
+        <li>
+          <label for="menuicon">
+            <span></span><span></span><span></span>
+          </label>
+        </li>
+      </ul>
+
+      <div class="sidebar">
+        <ul class="List">
+            <li class="gallery"><a href="index.html">홈</a></li>
+            <li class="music"><a href="music.html">음악</a></li>
+            <li class="art"><a href="art.html">예술</a></li>
+      </div>
+
+<header>
+<img id="G_name" src="이미지/갤러리.png">
+</header>
+
+
+    <aside>
+
+      <div class="nav">
+      <div class="navT">
+    <a href="gallery.html"><img id='nav_txt1' src="이미지/전체.png"
+                                onmouseover="All_mouseover(this)" onmouseout="All_mouseout(this)"></a>
+    <a href="M_gallery.html"><img id='nav_txt2'src="이미지/음악B.png"></a>
+    <a href="A_gallery.html"><img id='nav_txt3' src="이미지/예술.png"
+                            onmouseover="A_mouseover(this)" onmouseout="A_mouseout(this)"></a>
+      </div>
+      </div>
+
+
+      <div class="nav2">
+      <div class="navT2">
+    <a href="gallery_sarle.html"><img id='nav2_txt1' src="이미지/살리에리1.png"
+                                onmouseover="Do_mouseover(this)" onmouseout="Do_mouseout(this)"></a>
+    <a href="gallery_Fne.html"><img id='nav2_txt2'src="이미지/파니.png"
+                            onmouseover="Mo_mouseover(this)" onmouseout="Mo_mouseout(this)"></a>
+    <a href="gallery_S1.html"><img id='nav2_txt3' src="이미지/슈트라우스1세.png"
+                            onmouseover="Ca_mouseover(this)" onmouseout="Ca_mouseout(this)"></a>
+    <a href="gallery_Smena.html"><img id='nav2_txt4' src="이미지/샤미나드.png"
+                                onmouseover="Bo_mouseover(this)" onmouseout="Bo_mouseout(this)"></a>
+    <a href="gallery_Calan.html"><img id='nav2_txt5'src="이미지/쿨렌캄프.png"
+                            onmouseover="Na_mouseover(this)" onmouseout="Na_mouseout(this)"></a>
+    <a href="gallery_Chyog.html"><img id='nav2_txt6' src="이미지/초요갱.png"
+                              onmouseover="Sa_mouseover(this)" onmouseout="Sa_mouseout(this)"></a>
+      </div>
+      </div>
+
+
+      <div id="columns">
+
+        <figure>
+          <img src="갤러리/파니멘델스존.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/파니멘델스존2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/파니멘델스존곡.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/파니멘델스존3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/파니 멘델스존의 음악실.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/멘델스존들.png" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/멘달스존들3.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/파니멘델스존4.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/파니싸인편지.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/멘달스존들.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        </figure>
+
+        <figure>
+          <img src="갤러리/파니곡.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        </figure>
+
+
+
+        <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <img src="갤러리/파니멘델스존.jpg" style="width:100%" >
+        <div class="numbertext"><h1>파니 멘델스존 초상화</h1> <br><h3> -작가미상 </h3> </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="갤러리/파니멘델스존2.jpg" style="width:100%">
+          <div class="numbertext"><h1>파니 멘델스존과 그의 남편</h1> <br><h3> -작가미상 </h3> </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="갤러리/파니멘델스존곡.jpg" style="width:100%">
+          <div class="numbertext"><h1>파니의 악보에 그려진 남편의 그림</h1> <br><h3>  </h3> </div>
+        </div>
+
+        <div class="mySlides">
+          <img src="갤러리/파니멘델스존3.jpg" style="width:100%">
+          <div class="numbertext"><h1>파니 멘델스존 초상화)</h1> <br><h3> -작가미상 </h3> </div>
+        </div>
+
+
+      <div class="mySlides">
+          <img src="갤러리/파니 멘델스존의 음악실.jpg" style="width:100%">
+          <div class="numbertext"><h1>파니 멘델스존의 작업실</h1> <br><h3>-펠릭스 멘델스존 </h3> </div>
+          </div>
+
+          <div class="mySlides">
+          <img src="갤러리/멘델스존들.png" style="width:100%">
+          <div class="numbertext"><h1>멘델스존 남매</h1> <br><h3> -작가미상 </h3> </div>
+          </div>
+
+
+            <div class="mySlides" style="width:100%">
+            <img src="갤러리/멘달스존들3.jpg" style="width:100%">
+            <div class="numbertext"><h1>멘델스존 남매</h1> <br><h3> -작가미상 </h3> </div>
+            </div>
+
+            <div class="mySlides">
+            <img src="갤러리/파니멘델스존4.jpg" controls autoplay style="width:100%">
+            <div class="numbertext"><h1>파니 멘델스존의 사교활동</h1> <br><h3> -작가미상 </h3> </div>
+            </div>
+
+            <div class="mySlides">
+            <img src="갤러리/파니싸인편지.jpg" style="width:100%">
+            <div class="numbertext"><h1>파니 멘델스존의 친필싸인</h1> <br><h3> </h3> </div>
+          </div>
+
+          <div class="mySlides">
+          <img src="갤러리/멘달스존들.jpg" style="width:100%">
+          <div class="numbertext"><h1>멘델스존 남매</h1> <br><h3> -작가미상 </h3> </div>
+         </div>
+
+         <div class="mySlides">
+         <img src="갤러리/파니곡.jpg" style="width:100%">
+         <div class="numbertext"><h1>Notturno</h1> <br><h3> -파니 멘델스존 </h3> </div>
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+  </div>
+    </aside>
+
+    <script type="text/javascript">
+
+    function All_mouseover(obj){ obj.src="이미지/전체B.png";}
+    function All_mouseout(obj){ obj.src="이미지/전체.png";}
+
+    function A_mouseover(obj){ obj.src="이미지/예술B.png";}
+    function A_mouseout(obj){ obj.src="이미지/예술.png";}
+
+    function Do_mouseover(obj){ obj.src="이미지/살리에리B.png";}
+    function Do_mouseout(obj){ obj.src="이미지/살리에리1.png";}
+
+    function Mo_mouseover(obj){ obj.src="이미지/파니B.png";}
+    function Mo_mouseout(obj){ obj.src="이미지/파니.png";}
+
+    function Ca_mouseover(obj){ obj.src="이미지/슈트라우스1세B.png";}
+    function Ca_mouseout(obj){ obj.src="이미지/슈트라우스1세.png";}
+
+    function Bo_mouseover(obj){ obj.src="이미지/샤미나드B.png";}
+    function Bo_mouseout(obj){ obj.src="이미지/샤미나드.png";}
+
+    function Na_mouseover(obj){ obj.src="이미지/쿨렌캄프B.png";}
+    function Na_mouseout(obj){ obj.src="이미지/쿨렌캄프.png";}
+
+    function Sa_mouseover(obj){ obj.src="이미지/초요갱B.png";}
+    function Sa_mouseout(obj){ obj.src="이미지/초요갱.png";}
+
+
+
+
+
+
+
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+
+    </script>
+
+
+  </body>
+</html>
